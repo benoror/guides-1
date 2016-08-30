@@ -43,7 +43,7 @@ rm -rf dist
 ember build --environment=development
 cd dist
 cp index.html 200.html
-surge funny-name.surge.sh
+surge --domain funny-name.surge.sh
 ```
 
 We use `--enviroment=development` here so that Mirage will continue to mock fake data.  However, normally we would use `ember build --environment=production` which does more to make your code ready for production.
